@@ -3,8 +3,12 @@
 // - ai <18 anni viene applicato uno sconto del 20%, ai >65 anni uno sconto del 40%
 
 // Chiedere il numero dei km da percorrere
+const km = parseInt(prompt('inserisci il numero di km che dovrai percorrere')); //number
+console.log(km)
 
 //chiedere l'età
+const age = parseInt(prompt('inserisci la tua età')) //number
+console.log(age)
 
 // calcolare il prezzo al km
 
