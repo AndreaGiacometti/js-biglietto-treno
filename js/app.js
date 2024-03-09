@@ -4,15 +4,18 @@
 
 // Chiedere il numero dei km da percorrere
 const km = parseInt(prompt('inserisci il numero di km che dovrai percorrere')); //number
-console.log(km)
+//console.log(km)
 
 //chiedere l'età
 const age = parseInt(prompt('inserisci la tua età')) //number
-console.log(age)
+//console.log(age)
 
-// calcolare il prezzo al km
+// impostare variabile prezzo al km
+const pricePerKm = 0.21; //number
 
 //calcolare il prezzo del biglietto senza sconti
+const basePrice = (km * pricePerKm); //number
+console.log(basePrice)
 
 //impostare le variabili di sconto
 
