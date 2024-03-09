@@ -28,12 +28,13 @@ if (age < 18) {
 
 //calcolare il prezzo del biglietto applicando gli sconti
 const price = basePrice - basePrice * discount //number
-console.log(price)
 
 //stampare il prezzo finale riducendo il numero di cifre decimali a 2
+console.log (price.toFixed(2))
 
 // Stampare il prezzo del biglietto sulla viewport tramite collegamento a html
-
+const priceElement = document.getElementById('price')
+priceElement.innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) + '&euro;'
 
 
 
