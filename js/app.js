@@ -15,11 +15,20 @@ const pricePerKm = 0.21; //number
 
 //calcolare il prezzo del biglietto senza sconti
 const basePrice = (km * pricePerKm); //number
-console.log(basePrice)
+//console.log(basePrice)
 
 //impostare le variabili di sconto
+let discount = 0 //number
+
+if (age < 18) {
+    discount = 0.2 //number
+} else if (age > 65) {
+    discount = 0.4 //number
+}
 
 //calcolare il prezzo del biglietto applicando gli sconti
+const price = basePrice - basePrice * discount //number
+console.log(price)
 
 //stampare il prezzo finale riducendo il numero di cifre decimali a 2
 
